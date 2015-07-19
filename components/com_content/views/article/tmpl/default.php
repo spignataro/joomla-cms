@@ -97,7 +97,7 @@ $info    = $params->get('info_block_position', 0);
 	<?php $imgfloat = (empty($images->float_fulltext)) ? $params->get('float_fulltext') : $images->float_fulltext; ?>
 	<figure class="pull-<?php echo htmlspecialchars($imgfloat); ?> item-image">
 		<img
-		<?php if ($images->image_fulltext_caption) : ?>
+		<?php if ($images->image_fulltext_caption) :
 			echo 'title="' .htmlspecialchars($images->image_fulltext_caption) . '"'; ?>
 		<?php endif; ?>
 		src="<?php echo htmlspecialchars($images->image_fulltext); ?>" alt="<?php echo htmlspecialchars($images->image_fulltext_alt); ?>"/>
